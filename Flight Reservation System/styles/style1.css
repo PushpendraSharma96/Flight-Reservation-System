@@ -1,0 +1,95 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            color: #FFD700; /* Gold */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #87CEEB; /* Sky Blue */
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2C2C2C;
+            color: #FFFFFF;
+            box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border: 2px solid #32CD32; /* Lime Green */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FFA500; /* Orange */
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        button:hover {
+            background-color: #FF6347; /* Tomato */
+        }
+
+        .error {
+            color: #FF6F61; /* Coral */
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+	    .circular-image {
+	    width: 100px; /* Adjust the size as needed */
+	    height: 100px; /* Ensure the height matches the width */
+	    border-radius: 50%; /* Makes the image circular */
+	    margin-right: 10px; /* Adds space between the image and the text */
+	    vertical-align: middle; /* Aligns the image with the text */
+		}
+
+        /* Additional decorative elements */
+        .container::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 5px;
+            background-color: #00FA9A; /* Medium Spring Green */
+            margin: 0 auto 15px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+            }
+        }
